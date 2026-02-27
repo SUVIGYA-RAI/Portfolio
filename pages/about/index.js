@@ -1,5 +1,11 @@
-import { motion } from "framer-motion"
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import {
+  HiCodeBracket,
+  HiChartBar,
+  HiCloud,
+  HiPaintBrush,
+} from "react-icons/hi2";
 
 const fadeIn = (direction = "up", delay = 0) => {
   return {
@@ -18,51 +24,51 @@ const fadeIn = (direction = "up", delay = 0) => {
         ease: "easeInOut",
       },
     },
-  }
-}
+  };
+};
 
 export default function About() {
-  const [cgpa, setCgpa] = useState(0)
-  const [days, setDays] = useState(0)
-  const [projects, setProjects] = useState(0)
+  const [cgpa, setCgpa] = useState(0);
+  const [days, setDays] = useState(0);
+  const [projects, setProjects] = useState(0);
 
   useEffect(() => {
     let cgpaInterval = setInterval(() => {
       setCgpa((prev) => {
-        if (prev >= 7) {
-          clearInterval(cgpaInterval)
-          return 7
+        if (prev >= 7.5) {
+          clearInterval(cgpaInterval);
+          return 7.5;
         }
-        return prev + 1
-      })
-    }, 300)
+        return prev + 1;
+      });
+    }, 300);
 
     let daysInterval = setInterval(() => {
       setDays((prev) => {
         if (prev >= 400) {
-          clearInterval(daysInterval)
-          return 400
+          clearInterval(daysInterval);
+          return 400;
         }
-        return prev + 1
-      })
-    }, 10)
+        return prev + 1;
+      });
+    }, 10);
 
     let projectsInterval = setInterval(() => {
       setProjects((prev) => {
         if (prev >= 5) {
-          clearInterval(projectsInterval)
-          return 5
+          clearInterval(projectsInterval);
+          return 5;
         }
-        return prev + 1
-      })
-    }, 500)
+        return prev + 1;
+      });
+    }, 500);
 
     return () => {
-      clearInterval(cgpaInterval)
-      clearInterval(daysInterval)
-      clearInterval(projectsInterval)
-    }
-  }, [])
+      clearInterval(cgpaInterval);
+      clearInterval(daysInterval);
+      clearInterval(projectsInterval);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10 text-blue-300 flex items-center justify-center px-4 sm:px-6 lg:px-12 py-12 sm:py-16">
@@ -90,8 +96,8 @@ export default function About() {
                 {`class Developer {
   constructor() {
     this.name = "Suvigya Rai";
-    this.skills = ["Web Dev", "UI/UX", "Competitive Coding", "Data Modelling", "Data Analysis"];
-    this.passion = "Building beautiful experiences";
+    this.skills = ["Web Developer", "UI/UX Designer", "Data Enthusiast", "Devops Practitioner", "Cloud Deployment", "Competitive Coding"];
+    this.passion = "Engineering intelligent digital products";
   }
 }`}
               </pre>
@@ -133,53 +139,57 @@ export default function About() {
           variants={fadeIn("right", 0.5)}
           className="flex flex-col justify-center px-2 sm:px-0"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-blue-300">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-semibold mb-6 text-blue-300">
             About <span className="text-pink-500">Me</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-300 mb-10">
             I&apos;m a passionate{" "}
-            <span className="text-pink-500">fullstack developer</span> with a
-            love for creating elegant, user-friendly digital experiences. With a
-            strong background in computer science and design, I blend{" "}
-            <span className="text-pink-500">creativity</span> and{" "}
-            <span className="text-pink-500">technical excellence</span> to bring
-            every idea to life.
+            <span className="text-pink-500">full-stack engineer</span> who
+            combine UI/UX design, robust backend architecture,{" "}
+            <span className="text-pink-500">data</span> intelligence and{" "}
+            <span className="text-pink-500">Devops</span> practices to deliver
+            high performance, scalable digital products.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               {
-                title: "Web Development",
-                desc: "Building responsive and modern web apps with clean UI.",
-                icon: "💻",
+                title: "Full Stack Developer",
+                icon: <HiCodeBracket />,
+                desc: "Building responsive and scalable web applications.",
+              },
+              {
+                title: "DevOps Engineer",
+                icon: <HiCloud />,
+                desc: "Designing CI/CD pipelines and cloud-ready infrastructure.",
               },
               {
                 title: "Data Analyst",
-                desc: "Visualising large data sets and enhancing decision making.",
-                icon: "📊",
+                icon: <HiChartBar />,
+                desc: "Analyzing and visualizing data for smarter decisions.",
               },
               {
-                title: "UI/UX Design",
-                desc: "Designing intuitive, aesthetic, and user-friendly interfaces.",
-                icon: "🎨",
-              },
-              {
-                title: "Performance Optimization",
-                desc: "Improving speed, memory, and fluidity across platforms.",
-                icon: "⚡",
+                title: "UI/UX Designer",
+                icon: <HiPaintBrush />,
+                desc: "Creating intuitive and user-centered interfaces.",
               },
             ].map((item, idx) => (
               <motion.div
                 key={idx}
                 variants={fadeIn("up", 0.7 + idx * 0.2)}
                 whileHover={{ scale: 1.05 }}
-                className="p-5 rounded-2xl border-2 border-white/20 hover:border-pink-500 transition-colors shadow-md"
+                className="p-5 rounded-2xl border-2 border-white/20 
+    hover:border-pink-500 transition-colors shadow-md"
               >
-                <div className="text-2xl sm:text-3xl mb-3">{item.icon}</div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-2 text-pink-500">
-                  {item.title}
-                </h3>
-                <p className="text-gray-300 text-sm sm:text-base">
+                <div className="flex items-center gap-3">
+                  <div className="text-2xl text-green-300">{item.icon}</div>
+
+                  <h3 className="text-lg sm:text-xl font-semibold text-pink-500">
+                    {item.title}
+                  </h3>
+                </div>
+
+                <p className="mt-3 text-gray-300 text-sm sm:text-base leading-relaxed">
                   {item.desc}
                 </p>
               </motion.div>
@@ -188,5 +198,5 @@ export default function About() {
         </motion.div>
       </motion.div>
     </div>
-  )
+  );
 }

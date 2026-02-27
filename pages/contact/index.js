@@ -83,7 +83,7 @@ const Contact = () => {
         className="w-full bg-gradient-to-r from-[#1a0b2e] to-[#12071f] py-6 px-4 sm:px-8 lg:px-10 flex flex-col md:flex-row items-center justify-between border-t border-white/10"
       >
         <p className="text-sm sm:text-base lg:text-lg font-medium text-gray-300 text-center md:text-left">
-          © 2025 All Rights Reserved
+          © 2026 All Rights Reserved
         </p>
         <p className="text-xs sm:text-sm md:text-base font-bold text-gray-300 mt-4 md:mt-0 text-center md:text-right">
           Made with <span className="text-pink-500">♥</span> By Suvigya Rai ✨

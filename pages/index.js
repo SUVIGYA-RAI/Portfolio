@@ -20,13 +20,16 @@ const Home = () => {
             Transforming Ideas
             <br />
             Into <span className="text-pink-600">Digital Reality</span>
-            <br /> & <span className="text-pink-600">Design</span>
+            <br /> & <span className="text-pink-600">Design </span>
+            <br />
+            <span className="text-amber-300 text-2xl"> Full Stack • Data • DevOps • UI/UX</span>
           </motion.h1>
 
           <motion.p
             className="text-sm sm:text-base xl:text-lg max-w-xs sm:max-w-md md:max-w-lg xl:max-w-xl mx-auto xl:mx-0 mb-8 sm:mb-10 xl:mb-16 text-white"
           >
-            A full-stack developer driven by UI/UX and data science. I craft seamless digital experiences by building smart, user-focused web apps. My projects combine clean code, data insights, and intuitive design—powered by modern tech stacks.
+            A full-stack engineer driven by UI/UX, data science, and DevOps. 
+          I craft seamless digital products by building intelligent, user-focused applications — combining clean code, data-driven insights, scalable backend systems, and cloud-ready deployment pipelines.
           </motion.p>
 
           <div className="flex justify-center xl:hidden relative">

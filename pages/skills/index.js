@@ -1,13 +1,34 @@
-import { motion } from 'framer-motion';
-import { 
-  FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaJava, FaDatabase, 
-  FaPython, FaPhp, FaGithub, FaNodeJs 
-} from 'react-icons/fa';
-import { 
-  SiTailwindcss, SiCplusplus, SiNextdotjs, SiGit, SiMysql, 
-  SiCloudflare, SiPandas, SiNumpy, SiMongodb, SiExpress 
-} from 'react-icons/si';
-
+import { motion } from "framer-motion";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaJava,
+  FaDatabase,
+  FaPython,
+  FaPhp,
+  FaGithub,
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiCplusplus,
+  SiNextdotjs,
+  SiGit,
+  SiMysql,
+  SiCloudflare,
+  SiPandas,
+  SiNumpy,
+  SiMongodb,
+  SiExpress,
+  SiDocker,
+  SiKubernetes,
+  SiAmazon,
+  SiJenkins,
+  SiLinux,
+  SiNginx,
+} from "react-icons/si";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,48 +46,56 @@ const itemVariants = {
 };
 
 const techSkills = [
-  { name: 'HTML', icon: <FaHtml5 className="text-orange-500" /> },
-  { name: 'CSS', icon: <FaCss3Alt className="text-blue-500" /> },
-  { name: 'JavaScript', icon: <FaJsSquare className="text-yellow-400" /> },
-  { name: 'React', icon: <FaReact className="text-cyan-400" /> },
-  { name: 'Next.js', icon: <SiNextdotjs className="text-white" /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-sky-400" /> },
-  { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
-  { name: 'Express.js', icon: <SiExpress className="text-gray-200" /> },
-  { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
-  { name: 'C++', icon: <SiCplusplus className="text-blue-600" /> },
-  { name: 'Java', icon: <FaJava className="text-red-500" /> },
-  { name: 'Python', icon: <FaPython className="text-yellow-500" /> },
-  { name: 'Pandas', icon: <SiPandas className="text-blue-400" /> },
-  { name: 'NumPy', icon: <SiNumpy className="text-green-400" /> },
-  { name: 'Matplotlib', icon: <FaPython className="text-indigo-400" /> },
-  { name: 'PHP', icon: <FaPhp className="text-indigo-500" /> },
-  { name: 'PHPMailer', icon: <FaPhp className="text-blue-400" /> },
-  { name: 'API Calling', icon: <FaReact className="text-teal-300" /> },
-  { name: 'Git', icon: <SiGit className="text-orange-400" /> },
-  { name: 'GitHub', icon: <FaGithub className="text-gray-300" /> },
-  { name: 'DBMS', icon: <FaDatabase className="text-green-400" /> },
-  { name: 'MySQL', icon: <SiMysql className="text-blue-300" /> },
-  { name: 'Cloud Computing', icon: <SiCloudflare className="text-yellow-500" /> },
+  { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+  { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400" /> },
+  { name: "React", icon: <FaReact className="text-cyan-400" /> },
+  { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
+  { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+  { name: "Express.js", icon: <SiExpress className="text-gray-200" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+  { name: "C++", icon: <SiCplusplus className="text-blue-600" /> },
+  { name: "Java", icon: <FaJava className="text-red-500" /> },
+  { name: "Python", icon: <FaPython className="text-yellow-500" /> },
+  { name: "Pandas", icon: <SiPandas className="text-blue-400" /> },
+  { name: "NumPy", icon: <SiNumpy className="text-green-400" /> },
+  { name: "Matplotlib", icon: <FaPython className="text-indigo-400" /> },
+  { name: "PHP", icon: <FaPhp className="text-indigo-500" /> },
+  { name: "PHPMailer", icon: <FaPhp className="text-blue-400" /> },
+  { name: "API Calling", icon: <FaReact className="text-teal-300" /> },
+  { name: "Git", icon: <SiGit className="text-orange-400" /> },
+  { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
+  { name: "DBMS", icon: <FaDatabase className="text-green-400" /> },
+  { name: "MySQL", icon: <SiMysql className="text-blue-300" /> },
+  {
+    name: "Cloud Computing",
+    icon: <SiCloudflare className="text-yellow-500" />,
+  },
+
+  { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
+  { name: "Kubernetes", icon: <SiKubernetes className="text-blue-500" /> },
+  { name: "AWS", icon: <SiAmazon className="text-yellow-400" /> },
+  { name: "Jenkins", icon: <SiJenkins className="text-red-500" /> },
+  { name: "Linux", icon: <SiLinux className="text-yellow-300" /> },
+  { name: "Nginx", icon: <SiNginx className="text-green-400" /> },
 ];
 
 const softSkills = [
-  'Team Collaboration',
-  'Problem Solving',
-  'Communication',
-  'Time Management',
-  'Adaptability',
-  'Leadership',
-  'Creativity',
-  'Critical Thinking',
+  "Team Collaboration",
+  "Problem Solving",
+  "Communication",
+  "Time Management",
+  "Adaptability",
+  "Leadership",
+  "Creativity",
+  "Critical Thinking",
 ];
 
 export default function Skills() {
   return (
     <section className="min-h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10 text-white py-16 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        
-
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,7 +104,6 @@ export default function Skills() {
         >
           My <span className="text-pink-500">Skills</span>
         </motion.h1>
-
 
         <motion.div
           initial="hidden"
@@ -108,7 +136,6 @@ export default function Skills() {
             ))}
           </motion.div>
         </motion.div>
-
 
         <motion.div
           initial="hidden"

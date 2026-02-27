@@ -4,6 +4,7 @@ import {
   HiViewColumns,
   HiRectangleGroup,
   HiEnvelope,
+  HiAcademicCap,
 } from 'react-icons/hi2';
 
 export const navData = [
@@ -11,6 +12,7 @@ export const navData = [
   { name: 'About', path: '/about', icon: <HiUser /> },
   { name: 'Skills', path: '/skills', icon: <HiRectangleGroup /> },
   { name: 'Project', path: '/project', icon: <HiViewColumns /> },
+  { name: 'Certificate', path: '/certificate', icon: <HiAcademicCap /> },
   { name: 'Contact', path: '/contact', icon: <HiEnvelope /> },
 ];
 
