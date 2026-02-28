@@ -14,7 +14,7 @@ const Projects = () => {
       <div className="w-full px-8 xl:px-20 pr-24 xl:pr-32">
         <div className="grid xl:grid-cols-[35%_65%] gap-16 items-center">
 
-          {/* LEFT TEXT */}
+          
           <div className="space-y-8 text-center xl:text-left">
             <motion.h2
               variants={fadeIn("up", 0.2)}
