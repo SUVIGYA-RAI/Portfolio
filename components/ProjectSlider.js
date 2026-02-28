@@ -11,6 +11,13 @@ import "swiper/css/pagination";
 
 const projects = [
   {
+    title: "Ram Mobiles",
+    category: "Web Application",
+    img: "/shop.png", 
+    repo: "https://github.com/SUVIGYA-RAI/ecommerce-mern-website",
+    live: "https://ecommerce-mern-website-1.onrender.com/", 
+  },
+  {
     title: "Healthcare Assistant",
     category: "Web Application",
     img: "/aidoctor.png", 
@@ -35,8 +42,8 @@ const projects = [
     title: "Portfolio Website",
     category: "Frontend",
     img: "/portfolioo.png",
-    repo: "#",
-    live: "#",
+    repo: "https://github.com/SUVIGYA-RAI/Portfolio",
+    live: "https://suvigyarai.vercel.app",
   },
 ];
 
